@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Objects tree section</title>
+    <link media="all" rel="stylesheet" type="text/css" href="css/treeview.css"/>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="js/treeview.js"></script>
+  </head>
+  <body id="tree-body" onresize="resetButtonStatus();">
+    <a id="expander-left" onclick="showTree(!isExpanded());return false;" class="expander-left" aria-label="Objects tree section expanded, press Enter to collapse" href="javascript:void(0);">
+      <span></span>
+    </a>
+    <div id="tree" class="tree">
+      <ul class="dNode collapsed">
+        <div class="holder">
+          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Databases, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+          <img src="img/folder.gif" alt="category"></img>
+          <a class="node" role="button" href="javascript:void(0);" name="Databases" id="faf5426a-b130-4051-a1b0-00136089ff61" onclick="pathTo(this, &#39;faf5426a-b130-4051-a1b0-00136089ff61&#39;, null);return false;" aria-label="Show details for category Databases, ">Databases</a>
+        </div>
+        <ul>
+          <li class="dNode collapsed">
+            <div class="holder">
+              <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="TaRangStaff1 (1), collapsed, press Enter to expand" href="javascript:void(0);"></a>
+              <img src="img/source_database.gif" alt="mdb-file"></img>
+              <a class="node" role="button" href="javascript:void(0);" name="TaRangStaff1 (1)" id="dc50a148-0891-4471-957d-fc783b316066" onclick="pathTo(this, &#39;dc50a148-0891-4471-957d-fc783b316066&#39;, null);return false;" aria-label="Show details for mdb-file TaRangStaff1 (1), ">TaRangStaff1 (1)</a>
+            </div>
+            <ul>
+              <li class="dNode collapsed">
+                <div class="holder">
+                  <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Tables, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                  <img src="img/folder.gif" alt="category"></img>
+                  <a class="node" role="button" href="javascript:void(0);" name="Tables" id="e9fa9ef8-f531-49e5-8745-c1b66ff39b93" onclick="pathTo(this, &#39;e9fa9ef8-f531-49e5-8745-c1b66ff39b93&#39;, null);return false;" aria-label="Show details for category Tables, ">Tables</a>
+                </div>
+                <ul>
+                  <li class="dNode collapsed">
+                    <div class="holder">
+                      <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Employee, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                      <img src="img/table.gif" alt="table"></img>
+                      <a class="node" role="button" href="javascript:void(0);" name="Employee" id="2149c470-1488-4b25-be36-7d5b4c225d60" onclick="pathTo(this, &#39;2149c470-1488-4b25-be36-7d5b4c225d60&#39;, null);return false;" aria-label="Show details for table Employee, ">Employee</a>
+                    </div>
+                    <ul>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Indexes, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Indexes" id="3c5b6dba-7dfe-4d04-9e5a-a7ca98f71480" onclick="pathTo(this, &#39;3c5b6dba-7dfe-4d04-9e5a-a7ca98f71480&#39;, null);return false;" aria-label="Show details for category Indexes, ">Indexes</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/index.gif" alt="index"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="PhoneNum" id="6dc781d7-9ba8-42da-bd7f-5daa269d33ee" onclick="pathTo(this, &#39;6dc781d7-9ba8-42da-bd7f-5daa269d33ee&#39;, null);return false;" aria-label="Show details for index PhoneNum, ">PhoneNum</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dNode collapsed">
+                        <div class="holder">
+                          <a role="button" onclick="toggleOpenCloseNode(this)" class="open-close" aria-label="Keys, collapsed, press Enter to expand" href="javascript:void(0);"></a>
+                          <img src="img/folder.gif" alt="category"></img>
+                          <a class="node" role="button" href="javascript:void(0);" name="Keys" id="2dc078bf-9d3d-4812-9ad1-bd2906551f42" onclick="pathTo(this, &#39;2dc078bf-9d3d-4812-9ad1-bd2906551f42&#39;, null);return false;" aria-label="Show details for category Keys, ">Keys</a>
+                        </div>
+                        <ul>
+                          <li class="dNode collapsed">
+                            <div class="holder">
+                              <a role="button" class="empty"></a>
+                              <img src="img/primary_key.gif" alt="primary-key"></img>
+                              <a class="node" role="button" href="javascript:void(0);" name="PrimaryKey" id="7c3f671a-30df-4dee-a74f-08134694e55c" onclick="pathTo(this, &#39;7c3f671a-30df-4dee-a74f-08134694e55c&#39;, null);return false;" aria-label="Show details for primary-key PrimaryKey, ">PrimaryKey</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </ul>
+    </div>
+    <script type="text/javascript">window.addEventListener('DOMContentLoaded', function () {document.getElementById('faf5426a-b130-4051-a1b0-00136089ff61').click();});</script>
+  </body>
+</html>
